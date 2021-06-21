@@ -14,13 +14,17 @@ class AuthService {
       endpoint: environments.endpoint,
       url: 'users.db.json'
     }).then((resp) => {
-      const user = resp.find(
-        (i) => (i.numberPhone === payload.numberPhone || i.userName === payload.userName) && i.pin === payload.pin
-      );
+      const user = resp.find((i) => i.numberPhone === payload.numberPhone || i.userName === payload.userName);
 
       if (!!user) {
-        setStorage(keys.token, { ...user, accessToken: UUIDv4() });
-        window.location.reload();
+        if (user.pin === payload.pin) {
+          setStorage(keys.token, { ...user, accessToken: UUIDv4() });
+          window.location.reload();
+        } else {
+          warningMessage({
+            content: `El número PIN no es valido o esta vencido.`
+          });
+        }
       } else {
         warningMessage({
           content: `La información no es valida o no esta registrada en algún trámite.`

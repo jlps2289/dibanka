@@ -1,8 +1,16 @@
 [
   {
+    "id": 1,
     "name": "Jose Luis Parra Sánchez",
     "userName": "jl.ps2289@dibanka.co",
     "pin": "12345",
     "numberPhone": "3156853620"
+  },
+  {
+    "id": 2,
+    "name": "Administrador",
+    "userName": "admin@dibanka.co",
+    "pin": "01234",
+    "numberPhone": "3123456789"
   }
 ]
