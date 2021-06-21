@@ -1,23 +1,30 @@
 [
   {
-    "id": "20210521-1",
-    "date": "2021-05-21",
+    "id": "20210621-1",
+    "date": "2021-06-21",
     "name": "Queja sobre el Área de Cartera",
-    "categories": ["Queja"],
+    "categories": ["Queja", "Sugerencia"],
     "usersId": [1]
   },
   {
-    "id": "20210521-2",
+    "id": "20210521-1",
     "date": "2021-05-21",
     "name": "Factura de Proveedores - Radicado Factura AL-123456",
     "categories": ["Petición", "Reclamo"],
     "usersId": [1, 2]
   },
   {
-    "id": "20210520-1",
-    "date": "2021-05-20",
+    "id": "20210420-1",
+    "date": "2021-04-20",
     "name": "Solicitud de Generación de Informe de Cartera",
-    "categories": ["Solicitud"],
+    "categories": ["Petición"],
     "usersId": [1, 2]
+  },
+  {
+    "id": "20210418-1",
+    "date": "2021-04-18",
+    "name": "Parametrizar Informes de Cartera",
+    "categories": ["Queja", "Petición", "Sugerencia"],
+    "usersId": [1]
   }
 ]

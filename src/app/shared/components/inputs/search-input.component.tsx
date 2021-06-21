@@ -7,7 +7,8 @@ export const SearchInputComponent: React.FC<ISearchProps> = (props) => {
   const { dataSourceSearch, setDataSourceResult, ...searchProps } = props;
 
   const searchItem = (obj: any, query: string): boolean | undefined => {
-    for (const key in obj) {
+    const keys = Object.keys(obj);
+    for (const key of keys) {
       const value = obj[key];
 
       if (typeof value === 'object') {
@@ -18,7 +19,6 @@ export const SearchInputComponent: React.FC<ISearchProps> = (props) => {
         return true;
       }
     }
-
     return false;
   };
 
@@ -27,10 +27,10 @@ export const SearchInputComponent: React.FC<ISearchProps> = (props) => {
     setDataSourceResult(newDataSource || dataSourceSearch);
   };
 
-  return <Input.Search placeholder='Presione ENTER para buscar...' enterButton onSearch={search} {...searchProps} />;
+  return <Input.Search placeholder='Buscar (Presione ENTER)...' enterButton onSearch={search} {...searchProps} />;
 };
 
 interface ISearchProps extends SearchProps {
   dataSourceSearch: any;
-  setDataSourceResult: (...arg: any) => void;
+  setDataSourceResult: React.Dispatch<React.SetStateAction<any>>;
 }

@@ -56,8 +56,6 @@ const extract_data = <T>(response: AxiosResponse): T => {
 };
 
 const handle_error = (reject: any): Promise<Error> => {
-  /* REVIEW: [2020-10-25] Revisar los errores de las peticiones. */
-
   const errorStatus = reject.status;
   const errorMessageService = reject.message ? reject.message : null;
   const errorMessageServer = !errorMessageService && reject.error ? reject.error.message || reject.error.exception : null;

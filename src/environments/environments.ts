@@ -1,3 +1,3 @@
 export const environments = {
-  endpoint: `db/`
+  endpoint: `/db/`
 };

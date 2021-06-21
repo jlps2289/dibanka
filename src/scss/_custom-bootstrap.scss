@@ -5,7 +5,15 @@
 @import './bootstrap/_utilities';
 @import './bootstrap/_type';
 @import './bootstrap/_card';
+@import './bootstrap/_list-group';
 
 .container-fluid {
   padding: 0 1.5rem !important;
+}
+
+.list-group-item.active {
+  z-index: 2;
+  color: $black;
+  background-color: $gray-200;
+  border-color: inherit;
 }
