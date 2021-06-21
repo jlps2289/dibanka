@@ -39,6 +39,7 @@ export const ModalComponent: React.FC<ModalProps> = (props) => {
     <Modal
       title={
         <div
+          className='text-primary'
           style={{
             width: '100%',
             cursor: 'move'

@@ -170,3 +170,30 @@
   font-size: 11px;
   line-height: 15px;
 }
+
+.ant-timeline.ant-timeline-label .ant-timeline-item-label {
+  position: absolute;
+  top: -7.001px;
+  width: calc(25% - 12px);
+  text-align: right;
+}
+
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-tail,
+.ant-timeline.ant-timeline-right .ant-timeline-item-tail,
+.ant-timeline.ant-timeline-label .ant-timeline-item-tail,
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-head,
+.ant-timeline.ant-timeline-right .ant-timeline-item-head,
+.ant-timeline.ant-timeline-label .ant-timeline-item-head,
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-head-custom,
+.ant-timeline.ant-timeline-right .ant-timeline-item-head-custom,
+.ant-timeline.ant-timeline-label .ant-timeline-item-head-custom {
+  left: 25%;
+}
+
+.ant-timeline.ant-timeline-alternate .ant-timeline-item-left .ant-timeline-item-content,
+.ant-timeline.ant-timeline-right .ant-timeline-item-left .ant-timeline-item-content,
+.ant-timeline.ant-timeline-label .ant-timeline-item-left .ant-timeline-item-content {
+  left: calc(25% - 4px);
+  width: calc(75% - 14px);
+  text-align: left;
+}

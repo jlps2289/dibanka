@@ -28,7 +28,7 @@ export const TramiteComponent: React.FC<ITramiteProps> = (props) => {
     >
       <small>{moment(tramite.date).fromNow()}</small>
       <p className='mb-1'>
-        <b>{tramite.id}</b> - {tramite.name}
+        <b>{tramite.id}</b> - {tramite.title}
       </p>
       {tramite.categories.map((tag) => (
         <Tag key={tag} color={ETypePQRSColor[tag]}>

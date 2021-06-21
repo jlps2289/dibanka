@@ -22,8 +22,8 @@ export const TramitesListComponent: React.FC<ITramitesListProps> = (props) => {
 
   return (
     <div className='w-100 card mb-3 mr-md-3' {...tramitesListProps}>
-      <h4 className='card-header text-secondary'>Trámites</h4>
-      <div className='card-body'>
+      <h4 className='card-header text-reset'>Trámites</h4>
+      <div className='p-3'>
         <SearchInputComponent dataSourceSearch={initTramites} setDataSourceResult={setTramites} />
       </div>
       {_tramites.length ? (
