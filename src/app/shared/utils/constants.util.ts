@@ -14,7 +14,7 @@ const projectInfo = {
   menu: [
     {
       name: 'PQRS',
-      children: [{ name: 'Trámites', path: '/tramites' }]
+      children: [{ name: 'Trámites', path: '/pqrs/tramites' }]
     }
   ]
 };

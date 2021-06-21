@@ -8,13 +8,13 @@ import { AccessRoute, IRouteProps } from 'app/shared/components/router/access.ro
 import Spin from 'antd/es/spin';
 
 // Rutas
-// import { AdminRoutes } from 'app/modules/admin/admin.routes';
+import { PqrsRoutes } from 'app/modules/pqrs/pqrs.routes';
 
 // Pages
 const HomePage = lazy(() => import('./pages/module.page'));
 
 export const ModuleRoutes = () => {
-  const routesSetting: IRouteProps[] = [];
+  const routesSetting: IRouteProps[] = [...PqrsRoutes];
 
   return (
     <Suspense fallback={<Spin className='fadeIn app-loading' tip='Cargando Componentes...' />}>
